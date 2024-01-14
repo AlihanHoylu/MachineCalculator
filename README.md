@@ -46,7 +46,7 @@ MachineCalculator, Swift programlama dili kullanılarak geliştirilen yenilikçi
 
 - Bağlantı Kurma: Yöneticilerin onayı ile MachineCalculator, güvenli bir bağlantı kurarak kullanıcılar ve yöneticiler arasında etkileşimi teşvik eder.
 
-## Ana Özellikler:
+## Nasıl Kullanılır:
 
 - Kayıt/Giriş Yap: Firebase kimlik doğrulama kullanarak MachineCalculator'a kişiselleştirilmiş erişim için hesap oluşturun veya giriş yapın.
 
