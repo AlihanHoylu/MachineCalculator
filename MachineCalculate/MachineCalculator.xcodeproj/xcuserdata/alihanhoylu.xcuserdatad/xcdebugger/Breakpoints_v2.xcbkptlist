@@ -3,4 +3,1518 @@
    uuid = "865C9DDD-6E3D-40CF-9677-FFEA8298E62D"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CD0E59F3-3841-4FC7-9395-B69CBE3D49BC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/ViewController/AdminViewControllers/AdminViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E82ABC5E-7ED9-4E31-A53B-0346C1A4DBA3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/Service/Service.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
+            landmarkName = "downloadData(panels:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "08981C7D-05A4-4EA4-9022-D54AA608699E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "AuthStatusCheckView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FED89419-69A6-4CA6-98DB-F8EA551210CC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "AuthStatusCheckView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FED89419-69A6-4CA6-98DB-F8EA551210CC - 2e8fbf3069aa55f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "FED89419-69A6-4CA6-98DB-F8EA551210CC - 876559eb8b9796d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "115"
+                  endingLineNumber = "115"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "FED89419-69A6-4CA6-98DB-F8EA551210CC - 2e8fbf3069aa55f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "524">
+               </Location>
+               <Location
+                  uuid = "FED89419-69A6-4CA6-98DB-F8EA551210CC - 2e8fbf3069aa5591"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "115"
+                  endingLineNumber = "115"
+                  offsetFromSymbolStart = "524">
+               </Location>
+               <Location
+                  uuid = "FED89419-69A6-4CA6-98DB-F8EA551210CC - 2e8fbf3069aa5591"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "115"
+                  endingLineNumber = "115"
+                  offsetFromSymbolStart = "328">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0AA32003-DCD5-4BB7-A079-BE935DE701F9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "AuthStatusCheckView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0AA32003-DCD5-4BB7-A079-BE935DE701F9 - 876559eb8b9796d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "115"
+                  endingLineNumber = "115"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "0AA32003-DCD5-4BB7-A079-BE935DE701F9 - 2e8fbf3069aa5591"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "115"
+                  endingLineNumber = "115"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "0AA32003-DCD5-4BB7-A079-BE935DE701F9 - 876559eb8b9796f2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "0AA32003-DCD5-4BB7-A079-BE935DE701F9 - 2e8fbf3069aa55b6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "0AA32003-DCD5-4BB7-A079-BE935DE701F9 - 876559eb8b979613"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "117"
+                  endingLineNumber = "117"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "0AA32003-DCD5-4BB7-A079-BE935DE701F9 - 2e8fbf3069aa55b6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "360">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C8AB1BAD-8A3B-45B9-A39C-70F31769E41A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "AuthStatusCheckView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C8AB1BAD-8A3B-45B9-A39C-70F31769E41A - 876559eb8b9796f2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "344">
+               </Location>
+               <Location
+                  uuid = "C8AB1BAD-8A3B-45B9-A39C-70F31769E41A - 876559eb8b9796f2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "C8AB1BAD-8A3B-45B9-A39C-70F31769E41A - 876559eb8b979613"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "117"
+                  endingLineNumber = "117"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "25B31C45-BF5A-4ECA-ADAE-8AA1807DCDCE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "AuthStatusCheckView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "25B31C45-BF5A-4ECA-ADAE-8AA1807DCDCE - 876559eb8b979613"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "117"
+                  endingLineNumber = "117"
+                  offsetFromSymbolStart = "448">
+               </Location>
+               <Location
+                  uuid = "25B31C45-BF5A-4ECA-ADAE-8AA1807DCDCE - 876559eb8b979613"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "117"
+                  endingLineNumber = "117"
+                  offsetFromSymbolStart = "344">
+               </Location>
+               <Location
+                  uuid = "25B31C45-BF5A-4ECA-ADAE-8AA1807DCDCE - 876559eb8b979630"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "344">
+               </Location>
+               <Location
+                  uuid = "25B31C45-BF5A-4ECA-ADAE-8AA1807DCDCE - 876559eb8b979630"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "288">
+               </Location>
+               <Location
+                  uuid = "25B31C45-BF5A-4ECA-ADAE-8AA1807DCDCE - 876559eb8b979630"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "180">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "53E8ABB6-2FE8-47E3-99EE-E1CA18005003"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "AuthStatusCheckView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "53E8ABB6-2FE8-47E3-99EE-E1CA18005003 - 876559eb8b979630"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "53E8ABB6-2FE8-47E3-99EE-E1CA18005003 - c6352db38eb9e9c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "53E8ABB6-2FE8-47E3-99EE-E1CA18005003 - 876559eb8b979630"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "448">
+               </Location>
+               <Location
+                  uuid = "53E8ABB6-2FE8-47E3-99EE-E1CA18005003 - 876559eb8b979651"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "448">
+               </Location>
+               <Location
+                  uuid = "53E8ABB6-2FE8-47E3-99EE-E1CA18005003 - 876559eb8b979651"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "392">
+               </Location>
+               <Location
+                  uuid = "53E8ABB6-2FE8-47E3-99EE-E1CA18005003 - 876559eb8b979651"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "284">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE1752C0-1B26-4C5B-8A1C-57860171AD58"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "AuthStatusCheckView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CE1752C0-1B26-4C5B-8A1C-57860171AD58 - c6352db38eb9e9c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "CE1752C0-1B26-4C5B-8A1C-57860171AD58 - 876559eb8b979651"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "CE1752C0-1B26-4C5B-8A1C-57860171AD58 - c6352db38eb9e9ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "CE1752C0-1B26-4C5B-8A1C-57860171AD58 - c6352db38eb9e9ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "CE1752C0-1B26-4C5B-8A1C-57860171AD58 - 876559eb8b97967e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "CE1752C0-1B26-4C5B-8A1C-57860171AD58 - c6352db38eb9e80b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "CE1752C0-1B26-4C5B-8A1C-57860171AD58 - c6352db38eb9e80b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "CE1752C0-1B26-4C5B-8A1C-57860171AD58 - 876559eb8b97967e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "316">
+               </Location>
+               <Location
+                  uuid = "CE1752C0-1B26-4C5B-8A1C-57860171AD58 - c6352db38eb9e80b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "180">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A996303B-3416-44C3-B7BF-39D2F6FAF143"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "AuthStatusCheckView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "68A3EB0E-E8CC-41AA-9AEF-9774AD270D70"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "AuthStatusCheckView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "68A3EB0E-E8CC-41AA-9AEF-9774AD270D70 - 876559eb8b9798c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "264">
+               </Location>
+               <Location
+                  uuid = "68A3EB0E-E8CC-41AA-9AEF-9774AD270D70 - c6352db38eb9e750"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "672">
+               </Location>
+               <Location
+                  uuid = "68A3EB0E-E8CC-41AA-9AEF-9774AD270D70 - c6352db38eb9e750"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "452">
+               </Location>
+               <Location
+                  uuid = "68A3EB0E-E8CC-41AA-9AEF-9774AD270D70 - c6352db38eb9e771"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "452">
+               </Location>
+               <Location
+                  uuid = "68A3EB0E-E8CC-41AA-9AEF-9774AD270D70 - c6352db38eb9e771"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "276">
+               </Location>
+               <Location
+                  uuid = "68A3EB0E-E8CC-41AA-9AEF-9774AD270D70 - c6352db38eb9e771"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "688">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "219F662B-1FF3-4868-BF86-DD53D523F772"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "AuthStatusCheckView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "219F662B-1FF3-4868-BF86-DD53D523F772 - c6352db38eb9e733"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "129"
+                  endingLineNumber = "129"
+                  offsetFromSymbolStart = "672">
+               </Location>
+               <Location
+                  uuid = "219F662B-1FF3-4868-BF86-DD53D523F772 - c6352db38eb9e733"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "129"
+                  endingLineNumber = "129"
+                  offsetFromSymbolStart = "432">
+               </Location>
+               <Location
+                  uuid = "219F662B-1FF3-4868-BF86-DD53D523F772 - c6352db38eb9e733"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "129"
+                  endingLineNumber = "129"
+                  offsetFromSymbolStart = "252">
+               </Location>
+               <Location
+                  uuid = "219F662B-1FF3-4868-BF86-DD53D523F772 - c6352db38eb9e750"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "252">
+               </Location>
+               <Location
+                  uuid = "219F662B-1FF3-4868-BF86-DD53D523F772 - c6352db38eb9e750"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "219F662B-1FF3-4868-BF86-DD53D523F772 - c6352db38eb9e750"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "640">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "478CE2A1-29D9-4A45-B970-BB0D75BCB262"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "AuthStatusCheckView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "478CE2A1-29D9-4A45-B970-BB0D75BCB262 - 748f56e57205b5c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "478CE2A1-29D9-4A45-B970-BB0D75BCB262 - c6352db38eb9e849"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "228">
+               </Location>
+               <Location
+                  uuid = "478CE2A1-29D9-4A45-B970-BB0D75BCB262 - 748f56e57205b5e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "124"
+                  endingLineNumber = "124"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "478CE2A1-29D9-4A45-B970-BB0D75BCB262 - c6352db38eb9e86e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "124"
+                  endingLineNumber = "124"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "478CE2A1-29D9-4A45-B970-BB0D75BCB262 - c6352db38eb9e88f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "125"
+                  endingLineNumber = "125"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "478CE2A1-29D9-4A45-B970-BB0D75BCB262 - c6352db38eb9e750"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "478CE2A1-29D9-4A45-B970-BB0D75BCB262 - c6352db38eb9e86e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "124"
+                  endingLineNumber = "124"
+                  offsetFromSymbolStart = "436">
+               </Location>
+               <Location
+                  uuid = "478CE2A1-29D9-4A45-B970-BB0D75BCB262 - 748f56e57205b500"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "125"
+                  endingLineNumber = "125"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D665EFDB-9052-4A1D-B29A-E068899FBFC0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "AuthStatusCheckView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D665EFDB-9052-4A1D-B29A-E068899FBFC0 - c6352db38eb9e80b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "640">
+               </Location>
+               <Location
+                  uuid = "D665EFDB-9052-4A1D-B29A-E068899FBFC0 - c6352db38eb9e80b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "536">
+               </Location>
+               <Location
+                  uuid = "D665EFDB-9052-4A1D-B29A-E068899FBFC0 - c6352db38eb9e80b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "316">
+               </Location>
+               <Location
+                  uuid = "D665EFDB-9052-4A1D-B29A-E068899FBFC0 - c6352db38eb9e828"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "316">
+               </Location>
+               <Location
+                  uuid = "D665EFDB-9052-4A1D-B29A-E068899FBFC0 - c6352db38eb9e828"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "D665EFDB-9052-4A1D-B29A-E068899FBFC0 - c6352db38eb9e828"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.AuthViewController.AuthStatusCheckView() -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "300">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "75462538-9397-4D1D-8365-02FB7258C144"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/ViewController/AuthViewControllers/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "AuthStatusCheckView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A3D2903B-84EA-4754-BE46-609E297EDB92"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/ViewController/AdminViewControllers/AdminViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A3D2903B-84EA-4754-BE46-609E297EDB92 - a6fadc163b88168b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MachineCalculator.AdminViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AdminViewControllers/AdminViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "840">
+               </Location>
+               <Location
+                  uuid = "A3D2903B-84EA-4754-BE46-609E297EDB92 - a6fadc163b88168b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MachineCalculator.AdminViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AdminViewControllers/AdminViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "456">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D72B0C43-EA3D-4F2D-BF5F-6467FFAD8CEB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/ViewController/AdminViewControllers/AdminViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "643E8553-E89E-4C44-A229-8D9D5FF6CAE4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/ViewController/AdminViewControllers/AdminViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "643E8553-E89E-4C44-A229-8D9D5FF6CAE4 - a6fadc163b8816e8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MachineCalculator.AdminViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AdminViewControllers/AdminViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "1048">
+               </Location>
+               <Location
+                  uuid = "643E8553-E89E-4C44-A229-8D9D5FF6CAE4 - a6fadc163b8816e8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MachineCalculator.AdminViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/ViewController/AdminViewControllers/AdminViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "840">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "47EECBC6-91D7-480A-A6AE-B645FEECF102"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/View/PanelsCollectionViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "46BC0D16-ADD4-48C5-8C2C-76C96C75F1C7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/Service/Service.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "239"
+            endingLineNumber = "239"
+            landmarkName = "downloadData(panels:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1867B62F-A5A7-48D9-B63F-2DD2EA87EF0E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/Service/Service.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "230"
+            endingLineNumber = "230"
+            landmarkName = "downloadData(panels:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "709F0FAC-5C1A-4738-8027-E6DF9A9316F0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/Service/Service.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "232"
+            endingLineNumber = "232"
+            landmarkName = "downloadData(panels:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "76C32C00-BF2E-4D1F-B12B-8C1A2AC8DFEA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/Service/Service.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "248"
+            endingLineNumber = "248"
+            landmarkName = "downloadData(panels:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "76C32C00-BF2E-4D1F-B12B-8C1A2AC8DFEA - 4a16702482a6b2b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MachineCalculator.Service.downloadData(panels: Swift.Array&lt;MachineCalculator.Panel&gt;, completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/Service/Service.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "248"
+                  endingLineNumber = "248"
+                  offsetFromSymbolStart = "912">
+               </Location>
+               <Location
+                  uuid = "76C32C00-BF2E-4D1F-B12B-8C1A2AC8DFEA - 4a16702482a6b2b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MachineCalculator.Service.downloadData(panels: Swift.Array&lt;MachineCalculator.Panel&gt;, completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/Service/Service.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "248"
+                  endingLineNumber = "248"
+                  offsetFromSymbolStart = "880">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3F450394-AE8E-4FE8-891E-7A8B3C118969"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/Service/Service.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "227"
+            endingLineNumber = "227"
+            landmarkName = "downloadData(panels:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3F450394-AE8E-4FE8-891E-7A8B3C118969 - 4a16702482a74fe0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MachineCalculator.Service.downloadData(panels: Swift.Array&lt;MachineCalculator.Panel&gt;, completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/Service/Service.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "227"
+                  endingLineNumber = "227"
+                  offsetFromSymbolStart = "364">
+               </Location>
+               <Location
+                  uuid = "3F450394-AE8E-4FE8-891E-7A8B3C118969 - 4ec426bc429bb823"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.Service.downloadData(panels: Swift.Array&lt;MachineCalculator.Panel&gt;, completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/Service/Service.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "227"
+                  endingLineNumber = "227"
+                  offsetFromSymbolStart = "204">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DE95F23A-FE29-4C6E-80BD-E5396B52AF11"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/Service/Service.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "228"
+            endingLineNumber = "228"
+            landmarkName = "downloadData(panels:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DE95F23A-FE29-4C6E-80BD-E5396B52AF11 - 4a16702482a6b001"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MachineCalculator.Service.downloadData(panels: Swift.Array&lt;MachineCalculator.Panel&gt;, completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/Service/Service.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "228"
+                  endingLineNumber = "228"
+                  offsetFromSymbolStart = "380">
+               </Location>
+               <Location
+                  uuid = "DE95F23A-FE29-4C6E-80BD-E5396B52AF11 - 4ec426bc429bb823"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.Service.downloadData(panels: Swift.Array&lt;MachineCalculator.Panel&gt;, completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/Service/Service.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "227"
+                  endingLineNumber = "227"
+                  offsetFromSymbolStart = "204">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D9AC80F9-5602-4376-95F9-784B3D4713B2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/Service/Service.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
+            landmarkName = "downloadData(panels:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "65182B6D-158E-477B-8CE5-8DE6E10ADCCE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/Service/Service.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
+            landmarkName = "downloadData(panels:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

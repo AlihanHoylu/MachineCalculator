@@ -12,6 +12,7 @@ import FirebaseAuth
 class AuthViewController:UIViewController{
     //MARK: - Properties
     let service = AuthService()
+    let serviceData = Service()
     
     var authstack:UIStackView = UIStackView()
     var viewModel = AuthViewModel()
@@ -28,10 +29,11 @@ class AuthViewController:UIViewController{
     
     //MARK: - LifeCycles
     override func viewDidLoad() {
+        AuthStatusCheckView()
+        
         super.viewDidLoad()
         ContainerViewController.delegate = self
         RegisterViewController.delegate = self
-        AuthStatusCheck()
         style()
         layout()
         statusCheck()
@@ -59,7 +61,7 @@ extension AuthViewController{
         navigationController?.navigationBar.tintColor = .black
         navigationController?.pushViewController(RegisterViewController(), animated: true)
         
-
+        
     }
     @objc private func updateViewModel(){
         viewModel.email = emailTextField.text ?? ""
@@ -105,16 +107,60 @@ extension AuthViewController{
                     print("eror")
                 }else if snapshot != nil{
                     if let activeUser = ContainerViewController.activeUser{
-                        DispatchQueue.main.async {
-                            let controller = UINavigationController(rootViewController: ContainerViewController())
-                            controller.modalPresentationStyle = .fullScreen
-                            controller.isNavigationBarHidden = true
-                            self.present(controller, animated: true)
+                        if activeUser.rol == "admin"{
+                            self.serviceData.getAdminRequest(userEmail: activeUser.email) { eror, snapshot in
+                                if eror != nil{
+                                    print("istek getirmede hata")
+                                }else{
+                                    self.serviceData.getPanels(user: ContainerViewController.activeUser!) { eror in
+                                        if eror != nil{
+                                            print("panel getirmede hata")
+                                        }else{
+                                            self.serviceData.downloadData(panels: AdminViewController.panels) { eror in
+                                                if eror != nil{
+                                                    print("data indirmede hata")
+                                                }else{
+                                                    DispatchQueue.main.async {
+                                                        let controller = UINavigationController(rootViewController: ContainerViewController())
+                                                        controller.modalPresentationStyle = .fullScreen
+                                                        controller.isNavigationBarHidden = true
+                                                        self.present(controller, animated: true)
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }else if activeUser.rol == "panel"{
+                            self.service.getActiveUser { snapshot, eror in
+                                if eror != nil{
+                                    print("eror")
+                                }else if snapshot != nil{
+                                    if let activeUser = ContainerViewController.activeUser{
+                                        if activeUser.rol == "panel"{
+                                            self.serviceData.getAdmin(user: ContainerViewController.activeUser!) { eror in
+                                                if eror != nil{
+                                                    print("eror")
+                                                }else{
+                                                    DispatchQueue.main.async {
+                                                        let controller = UINavigationController(rootViewController: ContainerViewController())
+                                                        controller.modalPresentationStyle = .fullScreen
+                                                        controller.isNavigationBarHidden = true
+                                                        self.present(controller, animated: true)
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
             }
         }
+        
         if Auth.auth().currentUser?.uid == nil {
             dismiss(animated: true)
         }
@@ -129,14 +175,14 @@ extension AuthViewController{
         authstack.distribution = .fillEqually
         authstack.backgroundColor = .none
         authstack.translatesAutoresizingMaskIntoConstraints = false
-
+        
         
         image.translatesAutoresizingMaskIntoConstraints = false
         loginButton.addTarget(self, action: #selector(loginButtonClicked), for: .touchUpInside)
         registerButton.addTarget(self, action: #selector(registerButtonClicked), for: .touchUpInside)
         emailTextField.addTarget(self, action: #selector(updateViewModel), for: .editingChanged)
         passwordTextField.addTarget(self, action: #selector(updateViewModel), for: .editingChanged)
-
+        
     }
     private func layout(){
         view.addSubview(authstack)
@@ -153,7 +199,7 @@ extension AuthViewController{
             image.heightAnchor.constraint(equalToConstant: 220),
             image.bottomAnchor.constraint(equalTo: authstack.topAnchor, constant: -50)
             
-        
+            
         ])
     }
     

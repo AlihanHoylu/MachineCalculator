@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import FirebaseAuth
+import Firebase
 
 class ContainerViewController:UIViewController{
     //MARK: - Properties
@@ -22,7 +23,7 @@ class ContainerViewController:UIViewController{
     private var menuState:MenuState = .closed
     var navVc:UINavigationController?
     static var delegate: AuthStatusCheckDelegate?
-
+    
     //MARK: - LifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,31 +71,24 @@ extension ContainerViewController{
         menu.delegate = self
         
         if ContainerViewController.activeUser?.rol == "panel"{
-            PanelMain.delegate = self
-            let navVC = UINavigationController(rootViewController: PanelMain)
-            addChild(navVC)
-            view.addSubview(navVC.view)
+            self.PanelMain.delegate = self
+            let navVC = UINavigationController(rootViewController: self.PanelMain)
+            self.addChild(navVC)
+            self.view.addSubview(navVC.view)
             navVC.didMove(toParent: self)
             self.navVc = navVC
         }
+        
         if ContainerViewController.activeUser?.rol == "admin"{
-            AdminMain.delegate = self
-            let navVC = UINavigationController(rootViewController: AdminMain)
-            addChild(navVC)
-            view.addSubview(navVC.view)
+            self.AdminMain.delegate = self
+            let navVC = UINavigationController(rootViewController: self.AdminMain)
+            self.addChild(navVC)
+            self.view.addSubview(navVC.view)
             navVC.didMove(toParent: self)
             self.navVc = navVC
         }
-        
     }
     
-    private func style(){
-        
-    }
-    
-    private func layout(){
-        
-    }
     
     enum MenuState{
         case opened
@@ -116,7 +110,7 @@ extension ContainerViewController:MainViewControllerDelegate{
                     self?.menuState = .opened
                 }
             }
-
+            
         case.opened:
             UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut) {
                 self.navVc?.view.frame.origin.x = 0

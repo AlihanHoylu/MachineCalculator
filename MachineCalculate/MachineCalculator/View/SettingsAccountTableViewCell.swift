@@ -80,7 +80,7 @@ extension SettingsAccountTableViewCell{
         case "admin":
             labelService.text = service
         case "panel":
-            labelService.text = "Panel Yöneticiye bağlı değil"
+            labelService.text = service
         default:
             labelService.text = self.rol
         }

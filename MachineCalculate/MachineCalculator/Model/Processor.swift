@@ -14,6 +14,13 @@ struct Processor{
     var date: Date?
 }
 
+struct ProcessorS{
+    var bankGram: Float
+    var id: String
+    var date: String
+}
+
+
 struct myProcessor{
     var processor:Processor
     var obje:NSManagedObject

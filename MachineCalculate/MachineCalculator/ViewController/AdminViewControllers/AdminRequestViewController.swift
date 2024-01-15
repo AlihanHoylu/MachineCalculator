@@ -69,6 +69,18 @@ extension AdminRequestViewController{
                 print("eror")
             }else{
                 self.deleteRequest()
+                self.addAdminForPanel()
+            }
+        }
+    }
+    
+    private func addAdminForPanel(){
+        let request = ContainerViewController.requests[selectedIndex-1]
+        service.setAdmin(request: request, user: ContainerViewController.activeUser!) { eror in
+            if let eror = eror{
+                print(eror.localizedDescription)
+            }else{
+                print("başarılı")
             }
         }
     }

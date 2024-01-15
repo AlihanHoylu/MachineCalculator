@@ -13,10 +13,15 @@ class AdminViewController:UIViewController{
     weak var delegate: MainViewControllerDelegate?
     let service = Service()
     static var panels = [Panel]()
+    static var panelDatas = [String:[ProcessorS]]()
     
-    lazy var collectionView:UICollectionView = {
-        let collectionView = UICollectionView()
-        
+    
+    lazy var panelsCollectionView:UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        layout.itemSize = CGSize(width: Int(view.frame.width)/2-7, height: Int(view.frame.height)/3)
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.backgroundColor = .none
         return collectionView
     }()
     
@@ -24,25 +29,10 @@ class AdminViewController:UIViewController{
     
     //MARK: - LifeCycles
     override func viewDidLoad() {
-        collectionView.dataSource = self
-        collectionView.delegate = self
+        panelsCollectionView.dataSource = self
+        panelsCollectionView.delegate = self
         super.viewDidLoad()
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
-        service.getAdminRequest(userEmail: ContainerViewController.activeUser!.email) { eror, snapshot in
-            if let eror = eror{
-                print(eror.localizedDescription)
-            }else{
-                print(ContainerViewController.requests.count)
-                print(ContainerViewController.requests)
-            }
-        }
-        service.getPanels(user: ContainerViewController.activeUser!) { eror in
-            if let eror = eror{
-                print(eror.localizedDescription)
-            }else{
-                print(AdminViewController.panels.count)
-            }
-        }
+        panelsCollectionView.register(PanelsCollectionViewCell.self, forCellWithReuseIdentifier: PanelsCollectionViewCell.reuseableCellId)
         style()
         layout()
     }
@@ -61,9 +51,18 @@ extension AdminViewController{
         title = "Yönetici Ana Ekranı"
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "list.dash"), style: .done, target: self, action: #selector(didTapButton))
         navigationItem.leftBarButtonItem?.tintColor = .black
+        panelsCollectionView.translatesAutoresizingMaskIntoConstraints = false
     }
     private func layout(){
         
+        view.addSubview(panelsCollectionView)
+        
+        NSLayoutConstraint.activate([
+            panelsCollectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            panelsCollectionView.leftAnchor.constraint(equalTo: view.leftAnchor,constant: 2),
+            panelsCollectionView.rightAnchor.constraint(equalTo: view.rightAnchor,constant: -2),
+            panelsCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
     }
     
 }
@@ -71,12 +70,18 @@ extension AdminViewController{
 //MARK: - CollectionView
 extension AdminViewController:UICollectionViewDelegate,UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return AdminViewController.panels.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = .red
+        PanelsCollectionViewCell.panel = AdminViewController.panels[indexPath.row]
+        PanelsCollectionViewCell.process = AdminViewController.panelDatas[PanelsCollectionViewCell.panel!.email]
+        var cell = collectionView.dequeueReusableCell(withReuseIdentifier: PanelsCollectionViewCell.reuseableCellId, for: indexPath) as! PanelsCollectionViewCell
+        cell = collectionView.dequeueReusableCell(withReuseIdentifier: PanelsCollectionViewCell.reuseableCellId, for: indexPath) as! PanelsCollectionViewCell
+        cell.emailLabel.text = AdminViewController.panels[indexPath.row].email
+        cell.dateLabel.text = "2222/22/22 22:22"
+        cell.panelProcesTableView.reloadData()
+        cell.backgroundColor = .buttonEnabled
         return cell
     }
 }

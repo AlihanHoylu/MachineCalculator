@@ -10,6 +10,7 @@ import Firebase
 import FirebaseFirestore
 
 class Service{
+    let data = DataUse()
     
     func sentAdminRequest(user:ActiveUser,requestMail:String,completion: @escaping (Error?) -> Void){
         getAdminRequest(userEmail: requestMail) { eror, snapshot in
@@ -42,6 +43,8 @@ class Service{
                     Firestore.firestore().collection("requests").document(requestMail).setData(requests) { eror in
                         if let eror = eror{
                             completion(eror)
+                        }else{
+                            completion(nil)
                         }
                     }
                 }else{
@@ -74,13 +77,13 @@ class Service{
                     Firestore.firestore().collection("requests").document(user.email).setData(requests) { eror in
                         if let eror = eror{
                             completion(eror)
+                        }else{
+                            completion(nil)
                         }
                     }
                 }else{
                     print("Fazla istek")
                 }
-            
-        
     }
     
     func getAdminRequest(userEmail:String,completion: @escaping (Error?,DocumentSnapshot?) -> Void){
@@ -101,14 +104,12 @@ class Service{
                     ContainerViewController.requests = requests
                 }
                 completion(nil, snapshot)
-                
             }
         }
     }
     
     
     func setPanel(panels:[Panel],user:ActiveUser,completion: @escaping (Error?) -> Void){
-        
         if AdminViewController.panels.count < 10{
             let data:[String:Any]
             var panelsData = [[String:Any]]()
@@ -122,9 +123,12 @@ class Service{
             }
             data = ["panels":panelsData]
             Firestore.firestore().collection("users").document(user.id).setData(data,merge: true) { eror in
-                completion(eror)
+                if let eror = eror{
+                    completion(eror)
+                }else{
+                    completion(nil)
+                }
             }
-            
         }
     }
     
@@ -137,13 +141,111 @@ class Service{
             }else{
                 var panels = [Panel]()
                 if let document = snapshot?.data(){
-                    let datas = document["panels"] as! [[String:Any]]
-                    for data in datas{
-                        panels.append(Panel(id: data["panelId"] as! String, email: data["panelEmail"] as! String))
+                    if let datas = document["panels"] as? [[String:Any]]{
+                        for data in datas{
+                            panels.append(Panel(id: data["panelId"] as! String, email: data["panelEmail"] as! String))
+                        }
                     }
                 }
                 AdminViewController.panels = panels
+                completion(nil)
             }
         }
     }
+    
+    func getAdmin(user:ActiveUser,completion: @escaping (Error?) -> Void){
+        Firestore.firestore().collection("users").document(user.id).getDocument { snapshot, eror in
+            if let eror = eror {
+                completion(eror)
+            }else{
+                if let document = snapshot?.data(){
+                    let datas = document["admin"] as! [String:Any]
+                    let admin = Admin(email: datas["adminEmail"] as! String, id: datas["adminId"] as! String, date: datas["admindate"] as! String)
+                    PanelViewController.admin = admin
+                }
+                completion(nil)
+            }
+        }
+    }
+    
+    func setAdmin(request:Request,user:ActiveUser,completion: @escaping (Error?) -> Void){
+        let date = Date().formatted()
+        Firestore.firestore().collection("users").document(request.panelUid).getDocument { snapshot, eror in
+            if let eror = eror{
+                print(eror.localizedDescription)
+                completion(eror)
+            }else{
+                if let document = snapshot?.data(){
+                    if let datas = document["admin"] as? [String:Any]{
+                        let admin = Admin(email: datas["adminEmail"] as! String, id: datas["adminId"] as! String, date: datas["admindate"] as! String)
+                        print("admine sahip bir panel")
+                    }else{
+                        let admin = Admin(email: user.email, id: user.id, date: date)
+                        let data : [String:Any] = [
+                            "adminEmail":admin.email,
+                            "adminId":admin.id,
+                            "admindate":admin.date
+                        ]
+                        Firestore.firestore().collection("users").document(request.panelUid).setData(["admin":data],merge: true) { eror in
+                            if let eror = eror{
+                                completion(eror)
+                            }else{
+                                completion(nil)
+                            }
+                        }
+                    }
+                }
+            }
+                
+        }
+    }
+    
+    func uploadData(user:ActiveUser,completion: @escaping (Error?) -> Void){
+        let process = data.downloadData()
+        var data = [String:Any]()
+        var datas = [[String:Any]]()
+        for proces in process{
+            let dataProces:[String:Any] = [
+                "bankGram": proces.processor.bankGram,
+                "date": proces.processor.date?.formatted(),
+                "id":proces.processor.id?.uuidString
+            ]
+            datas.append(dataProces)
+        }
+        data = ["data":datas]
+        Firestore.firestore().collection("users").document(user.id).setData(data, merge: true) { eror in
+            if let eror = eror{
+                completion(eror)
+            }else{
+                completion(nil)
+            }
+        }
+    }
+    
+    func downloadData(panels:[Panel],completion: @escaping (Error?) -> Void){
+        for panel in panels{
+            var process = [ProcessorS]()
+            Firestore.firestore().collection("users").document(panel.id).getDocument { snapshot, eror in
+                if let eror = eror {
+                    completion(eror)
+                }else{
+                    if let document = snapshot?.data(){
+                        if let datas = document["data"] as? [[String:Any]]{
+                            for data in datas{
+                                process.append(ProcessorS(bankGram: data["bankGram"] as! Float, id: data["id"] as! String, date: data["date"] as! String))
+                            }
+                            print(process)
+                            print(panel.email)
+                            AdminViewController.panelDatas[panel.email] = process
+                            completion(nil)
+                        }else{
+                            print("eror")
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
 }

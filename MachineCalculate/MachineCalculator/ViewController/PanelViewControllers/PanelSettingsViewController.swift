@@ -10,6 +10,7 @@ import UIKit
 
 class PanelSettingsViewController:UIViewController{
     //MARK: - Properties
+    let service = Service()
     lazy var settingsTableView:UITableView = {
         let tableView = UITableView()
         
@@ -53,7 +54,15 @@ extension PanelSettingsViewController{
     private func selectOption(item:MenuOptions){
         switch item{
         case .getData:
-            print("get")
+            service.uploadData(user: ContainerViewController.activeUser!) { eror in
+                if let eror = eror{
+                    print("eror")
+                }
+            }
+            
+            
+
+            
         case .request:
             let controller = UINavigationController(rootViewController: SentPanelRequestViewController())
             
@@ -61,7 +70,7 @@ extension PanelSettingsViewController{
         case .signOut:
             dismiss(animated: true)
         case .showAdmin:
-            print("Show Panels")
+            print(PanelViewController.admin?.email)
         }
     }
     
@@ -101,7 +110,14 @@ extension PanelSettingsViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0{
             let cell = tableView.dequeueReusableCell(withIdentifier: SettingsAccountTableViewCell.reuseableCellId, for: indexPath) as! SettingsAccountTableViewCell
-            cell.configure(email: ContainerViewController.activeUser?.email as! String, rol: ContainerViewController.activeUser?.rol as! String, service: "a")
+            let servic:String = {
+                if let admin = PanelViewController.admin{
+                    return "Yöneticiye bağlı"
+                }else{
+                    return "Yöneticiye bağlı değil"
+                }
+            }()
+            cell.configure(email: ContainerViewController.activeUser?.email as! String, rol: ContainerViewController.activeUser?.rol as! String, service: servic)
             tableView.rowHeight = 100
             cell.backgroundColor = UIColor(named: "gray2")
             cell.tintColor = .white

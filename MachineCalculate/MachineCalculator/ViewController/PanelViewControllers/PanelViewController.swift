@@ -11,12 +11,15 @@ import UIKit
 
 class PanelViewController: UIViewController {
     //MARK: - Properties
+    
+    static var admin:Admin?
     weak var delegate: MainViewControllerDelegate?
     private var viewModel = MainViewModel()
     private var bank :Float = 0
     private var newgram:Float = 0
     private var proceses:[myProcessor]?
     private let dataUs = DataUse()
+    
     lazy var textFieldInput:UITextField = {
         let textField = UITextField()
         textField.backgroundColor = .white
