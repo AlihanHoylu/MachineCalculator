@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import JGProgressHUD
 
 class PanelSettingsViewController:UIViewController{
     //MARK: - Properties
@@ -52,21 +53,34 @@ extension PanelSettingsViewController{
     
     
     private func selectOption(item:MenuOptions){
+        
+        
+        
         switch item{
         case .getData:
+            
+            let hude = JGProgressHUD(style: .dark)
+            hude.interactionType = .blockAllTouches
+            hude.textLabel.text = "Yükleniyor"
+            hude.show(in: self.view)
+            
             service.uploadData(user: ContainerViewController.activeUser!) { eror in
                 if let eror = eror{
-                    print("eror")
+                    hude.dismiss()
+                    self.hud(type: "error", subtitle: eror.localizedDescription)
+                }else{
+                    hude.dismiss()
+                    self.hud(type: "sucses", subtitle: "Başarılı Yükleme")
                 }
             }
-            
-            
-
-            
         case .request:
-            let controller = UINavigationController(rootViewController: SentPanelRequestViewController())
             
-            present(controller, animated: true)
+            if PanelViewController.admin != nil {
+                self.hud(type: "error", subtitle: "Zaten bir yöneticiye Bağlı")
+            }else{
+                let controller = UINavigationController(rootViewController: SentPanelRequestViewController())
+                present(controller, animated: true)
+            }
         case .signOut:
             dismiss(animated: true)
         case .showAdmin:

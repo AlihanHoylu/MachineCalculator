@@ -17,7 +17,7 @@ class Service{
             if let eror = eror{
                 print(eror.localizedDescription)
             }else if let snapshot = snapshot{
-                let oldRequests = ContainerViewController.requests
+                let oldRequests = AdminViewController.requests
                 
                 if oldRequests.count<11{
                     let date = Date()
@@ -49,13 +49,14 @@ class Service{
                     }
                 }else{
                     print("Fazla istek")
+                    completion(.some(Error.self as! Error))
                 }
             }
         }
     }
     
     func sentAdminRequests(user:ActiveUser,completion: @escaping (Error?) -> Void){
-                let oldRequests = ContainerViewController.requests
+                let oldRequests = AdminViewController.requests
                 
                 if oldRequests.count<10{
                     
@@ -87,6 +88,7 @@ class Service{
     }
     
     func getAdminRequest(userEmail:String,completion: @escaping (Error?,DocumentSnapshot?) -> Void){
+        AdminViewController.requests.removeAll()
         Firestore.firestore().collection("requests").document(userEmail).getDocument { snapshot, eror in
             if let eror = eror{
                 completion(eror, nil)
@@ -98,10 +100,10 @@ class Service{
                     for data in datas{
                         let request = Request(panelEmail: data["panelemail"] as! String, panelUid: data["paneluid"] as! String, requestDate: data["date"] as! String)
                         requests.append(request)
-                        ContainerViewController.requests.append(request)
+                        AdminViewController.requests.append(request)
                     }
                 }else{
-                    ContainerViewController.requests = requests
+                    AdminViewController.requests = requests
                 }
                 completion(nil, snapshot)
             }
@@ -159,9 +161,10 @@ class Service{
                 completion(eror)
             }else{
                 if let document = snapshot?.data(){
-                    let datas = document["admin"] as! [String:Any]
-                    let admin = Admin(email: datas["adminEmail"] as! String, id: datas["adminId"] as! String, date: datas["admindate"] as! String)
-                    PanelViewController.admin = admin
+                    if let datas = document["admin"] as? [String:Any]{
+                        let admin = Admin(email: datas["adminEmail"] as! String, id: datas["adminId"] as! String, date: datas["admindate"] as! String)
+                        PanelViewController.admin = admin
+                    }
                 }
                 completion(nil)
             }
@@ -223,23 +226,27 @@ class Service{
     }
     
     func downloadData(panels:[Panel],completion: @escaping (Error?) -> Void){
-        for panel in panels{
-            var process = [ProcessorS]()
-            Firestore.firestore().collection("users").document(panel.id).getDocument { snapshot, eror in
-                if let eror = eror {
-                    completion(eror)
-                }else{
-                    if let document = snapshot?.data(){
-                        if let datas = document["data"] as? [[String:Any]]{
-                            for data in datas{
-                                process.append(ProcessorS(bankGram: data["bankGram"] as! Float, id: data["id"] as! String, date: data["date"] as! String))
+        if panels.count == 0 {
+            completion(nil)
+        }else{
+            for panel in panels{
+                var process = [ProcessorS]()
+                Firestore.firestore().collection("users").document(panel.id).getDocument { snapshot, eror in
+                    if let eror = eror {
+                        completion(eror)
+                    }else{
+                        if let document = snapshot?.data(){
+                            if let datas = document["data"] as? [[String:Any]]{
+                                for data in datas{
+                                    process.append(ProcessorS(bankGram: data["bankGram"] as! Float, id: data["id"] as! String, date: data["date"] as! String))
+                                }
+                                print(process)
+                                print(panel.email)
+                                AdminViewController.panelDatas[panel.email] = process
+                                completion(nil)
+                            }else{
+                                print("eror")
                             }
-                            print(process)
-                            print(panel.email)
-                            AdminViewController.panelDatas[panel.email] = process
-                            completion(nil)
-                        }else{
-                            print("eror")
                         }
                     }
                 }

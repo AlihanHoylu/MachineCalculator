@@ -10,7 +10,7 @@ import UIKit
 class PanelsCollectionViewCell: UICollectionViewCell {
     //MARK: - Properties
     static let reuseableCellId = "panellcollectioncell"
-    static var process:[ProcessorS]?
+    var process:[ProcessorS]?
     static var panel:Panel?
     
     lazy var emailLabel:UILabel = {
@@ -37,6 +37,7 @@ class PanelsCollectionViewCell: UICollectionViewCell {
     //MARK: - LifeCycles
     override init(frame: CGRect) {
         super.init(frame: frame)
+        process = AdminViewController.panelDatas[PanelsCollectionViewCell.panel!.email]
         panelProcesTableView.dataSource = self
         panelProcesTableView.delegate = self
         style()
@@ -86,19 +87,19 @@ extension PanelsCollectionViewCell{
 //MARK: - TableView
 extension PanelsCollectionViewCell:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return PanelsCollectionViewCell.process!.count
+        return process?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        if PanelsCollectionViewCell.process![indexPath.row].bankGram < 0 {
+        if process![indexPath.row].bankGram < 0 {
             cell.backgroundColor = .systemRed
         }else{
             cell.backgroundColor = .systemGreen
         }
         
-        cell.textLabel?.text = "\(PanelsCollectionViewCell.process![indexPath.row].bankGram)"
+        cell.textLabel?.text = "\(process![indexPath.row].bankGram)"
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

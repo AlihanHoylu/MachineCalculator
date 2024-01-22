@@ -47,7 +47,7 @@ extension AdminRequestViewController{
     
     
     private func addPanel(){
-        let request = ContainerViewController.requests[selectedIndex-1]
+        let request = AdminViewController.requests[selectedIndex-1]
         
         let panel = Panel(id: request.panelUid, email: request.panelEmail)
         let panels = AdminViewController.panels
@@ -66,16 +66,16 @@ extension AdminRequestViewController{
         }
         service.setPanel(panels: AdminViewController.panels, user: ContainerViewController.activeUser!) { eror in
             if let eror = eror{
-                print("eror")
+                print(eror.localizedDescription)
             }else{
-                self.deleteRequest()
                 self.addAdminForPanel()
+                self.deleteRequest()
             }
         }
     }
     
     private func addAdminForPanel(){
-        let request = ContainerViewController.requests[selectedIndex-1]
+        let request = AdminViewController.requests[selectedIndex - 1]
         service.setAdmin(request: request, user: ContainerViewController.activeUser!) { eror in
             if let eror = eror{
                 print(eror.localizedDescription)
@@ -86,7 +86,7 @@ extension AdminRequestViewController{
     }
     
     private func deleteRequest(){
-        ContainerViewController.requests.remove(at: selectedIndex-1)
+        AdminViewController.requests.remove(at: selectedIndex-1)
         service.sentAdminRequests(user: ContainerViewController.activeUser!) { eror in
             if let eror = eror{
                 print(eror.localizedDescription)
@@ -127,14 +127,14 @@ extension AdminRequestViewController{
 //MARK: - TableView
 extension AdminRequestViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ContainerViewController.requests.count + 1
+        return AdminViewController.requests.count + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let showRequests = ContainerViewController.requests
+        let showRequests = AdminViewController.requests
         if indexPath.row == 0{
             let cell = tableView.dequeueReusableCell(withIdentifier: SettingsAccountTableViewCell.reuseableCellId, for: indexPath) as! SettingsAccountTableViewCell
-            cell.configure(email: ContainerViewController.activeUser?.email as! String, rol: "Bağlantı istekleri \(ContainerViewController.requests.count)/10" , service: "\(AdminViewController.panels.count) adet panel bağlı")
+            cell.configure(email: ContainerViewController.activeUser?.email as! String, rol: "Bağlantı istekleri \(AdminViewController.requests.count)/10" , service: "\(AdminViewController.panels.count) adet panel bağlı")
             tableView.rowHeight = 100
             cell.backgroundColor = UIColor(named: "gray2")
             cell.tintColor = .white

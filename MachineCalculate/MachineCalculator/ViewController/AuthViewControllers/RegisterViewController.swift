@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import JGProgressHUD
 
 class RegisterViewController:UIViewController{
     //MARK: - Properties
@@ -25,12 +26,12 @@ class RegisterViewController:UIViewController{
     var viewModel = RegisterViewModel()
     var rol:String = ""
     let service = AuthService()
-    var serviceActive = false
     static var delegate: AuthStatusCheckDelegate?
     
     
     //MARK: - LifeCycles
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         statusCheck()
         style()
@@ -56,19 +57,26 @@ extension RegisterViewController{
     }
     
     @objc private func registerButtonClicked(){
-        serviceActive = true
+        
+        let hude = JGProgressHUD(style: .dark)
+        hude.interactionType = .blockAllTouches
+        hude.textLabel.text = "Yükleniyor"
+        hude.show(in: self.view)
+        
         statusCheck()
         if viewModel.againPassword == viewModel.password{
             let newUser = User(email: viewModel.email, password: viewModel.password, rol: viewModel.role)
             service.createUser(newUser: newUser) { result, eror in
-                if eror != nil{
-                    print(eror!.localizedDescription)
-                    self.serviceActive = false
+                if let eror = eror{
+                    print(eror.localizedDescription)
                     self.statusCheck()
+                    hude.dismiss()
+                    self.hud(type: "error", subtitle: eror.localizedDescription)
                 }else if result != nil{
-                    self.serviceActive = false
                     self.navigationController?.popViewController(animated: true)
                     RegisterViewController.delegate?.AuthStatusCheck()
+                    hude.dismiss()
+                    self.hud(type: "succes", subtitle: "Giriş Başarılı")
                 }
             }
             clearTextFields()
@@ -88,22 +96,12 @@ extension RegisterViewController{
     }
     
     private func statusCheck(){
-        if viewModel.email == "" || viewModel.password == "" || viewModel.againPassword == "" || viewModel.againPassword != viewModel.password || serviceActive == true {
+        if viewModel.email == "" || viewModel.password == "" || viewModel.againPassword == "" || viewModel.againPassword != viewModel.password {
             registerButton.isEnabled = false
             registerButton.backgroundColor = UIColor(named: "buttonEnabled")
         }else{
             registerButton.isEnabled = true
             registerButton.backgroundColor = .none
-        }
-        
-        if serviceActive == true{
-            emailTextField.isEnabled = false
-            passwordTextField.isEnabled = false
-            againPasswordTextField.isEnabled = false
-        }else if serviceActive == false{
-            emailTextField.isEnabled = true
-            passwordTextField.isEnabled = true
-            againPasswordTextField.isEnabled = true
         }
     }
     

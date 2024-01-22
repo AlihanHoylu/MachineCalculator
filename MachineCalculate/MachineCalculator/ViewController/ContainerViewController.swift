@@ -13,7 +13,6 @@ import Firebase
 class ContainerViewController:UIViewController{
     //MARK: - Properties
     static var activeUser: ActiveUser? = nil
-    static var requests = [Request]()
     let serviceUs = AuthService()
     let service = Service()
     let PanelMain = PanelViewController()
@@ -35,15 +34,6 @@ class ContainerViewController:UIViewController{
 //MARK: - Helpers
 
 extension ContainerViewController{
-    
-    private func checkActiveUser(){
-        serviceUs.getActiveUser { snap, eror in
-            if let eror = eror{
-                self.signOut()
-                
-            }
-        }
-    }
     
     private func signOut(){
         do{

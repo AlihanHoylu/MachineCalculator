@@ -28,6 +28,7 @@
 		40569A762B5299AD00658B44 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40569A752B5299AD00658B44 /* AdminViewController.swift */; };
 		40569A7A2B52C5A200658B44 /* AdminInfoRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40569A792B52C5A200658B44 /* AdminInfoRequestTableViewCell.swift */; };
 		40569A7C2B5431BE00658B44 /* Panel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40569A7B2B5431BE00658B44 /* Panel.swift */; };
+		4056CFDD2B58288F00AF8D76 /* ShowAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4056CFDC2B58288F00AF8D76 /* ShowAdminViewController.swift */; };
 		40E81B602B550FE900D8C866 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 40E81B5F2B550FE900D8C866 /* FirebaseAnalytics */; };
 		40E81B622B550FE900D8C866 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 40E81B612B550FE900D8C866 /* FirebaseAnalyticsOnDeviceConversion */; };
 		40E81B642B550FE900D8C866 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 40E81B632B550FE900D8C866 /* FirebaseAnalyticsSwift */; };
@@ -57,6 +58,7 @@
 		40E81B942B550FE900D8C866 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 40E81B932B550FE900D8C866 /* FirebaseStorageCombine-Community */; };
 		40E81B962B55188800D8C866 /* PanelsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E81B952B55188800D8C866 /* PanelsCollectionViewCell.swift */; };
 		40E81B982B552B2000D8C866 /* Admin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E81B972B552B2000D8C866 /* Admin.swift */; };
+		40E81B9B2B55A1F100D8C866 /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 40E81B9A2B55A1F100D8C866 /* JGProgressHUD */; };
 		40ECEF702B4AD3CD004EDC47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ECEF6F2B4AD3CD004EDC47 /* AppDelegate.swift */; };
 		40ECEF722B4AD3CD004EDC47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ECEF712B4AD3CD004EDC47 /* SceneDelegate.swift */; };
 		40ECEF742B4AD3CD004EDC47 /* PanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ECEF732B4AD3CD004EDC47 /* PanelViewController.swift */; };
@@ -100,6 +102,7 @@
 		40569A752B5299AD00658B44 /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
 		40569A792B52C5A200658B44 /* AdminInfoRequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminInfoRequestTableViewCell.swift; sourceTree = "<group>"; };
 		40569A7B2B5431BE00658B44 /* Panel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panel.swift; sourceTree = "<group>"; };
+		4056CFDC2B58288F00AF8D76 /* ShowAdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAdminViewController.swift; sourceTree = "<group>"; };
 		40E81B952B55188800D8C866 /* PanelsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelsCollectionViewCell.swift; sourceTree = "<group>"; };
 		40E81B972B552B2000D8C866 /* Admin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Admin.swift; sourceTree = "<group>"; };
 		40ECEF6C2B4AD3CD004EDC47 /* MachineCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MachineCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +141,7 @@
 				40E81B622B550FE900D8C866 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				40E81B882B550FE900D8C866 /* FirebaseMLModelDownloader in Frameworks */,
 				40E81B7C2B550FE900D8C866 /* FirebaseFirestoreSwift in Frameworks */,
+				40E81B9B2B55A1F100D8C866 /* JGProgressHUD in Frameworks */,
 				40E81B682B550FE900D8C866 /* FirebaseAppCheck in Frameworks */,
 				40E81B662B550FE900D8C866 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				40E81B6C2B550FE900D8C866 /* FirebaseAuth in Frameworks */,
@@ -193,6 +197,7 @@
 				40ECEF732B4AD3CD004EDC47 /* PanelViewController.swift */,
 				40569A5E2B510ACB00658B44 /* PanelSettingsViewController.swift */,
 				40569A6E2B51CFBC00658B44 /* SentPanelRequestViewController.swift */,
+				4056CFDC2B58288F00AF8D76 /* ShowAdminViewController.swift */,
 			);
 			path = PanelViewControllers;
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 				40E81B8F2B550FE900D8C866 /* FirebaseRemoteConfigSwift */,
 				40E81B912B550FE900D8C866 /* FirebaseStorage */,
 				40E81B932B550FE900D8C866 /* FirebaseStorageCombine-Community */,
+				40E81B9A2B55A1F100D8C866 /* JGProgressHUD */,
 			);
 			productName = MachineCalculate;
 			productReference = 40ECEF6C2B4AD3CD004EDC47 /* MachineCalculator.app */;
@@ -393,6 +399,7 @@
 			mainGroup = 40ECEF632B4AD3CD004EDC47;
 			packageReferences = (
 				40E81B5E2B550FE900D8C866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				40E81B992B55A1F100D8C866 /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
 			);
 			productRefGroup = 40ECEF6D2B4AD3CD004EDC47 /* Products */;
 			projectDirPath = "";
@@ -430,6 +437,7 @@
 				40145C8A2B4B19F100BA51C2 /* Data.swift in Sources */,
 				40569A612B510B9A00658B44 /* AdminSettingsViewController.swift in Sources */,
 				40ECEF742B4AD3CD004EDC47 /* PanelViewController.swift in Sources */,
+				4056CFDD2B58288F00AF8D76 /* ShowAdminViewController.swift in Sources */,
 				40EFEFE82B4EF7AD00802B40 /* AuthViewController.swift in Sources */,
 				40569A742B51E17600658B44 /* SetnPanelRequestViewModel.swift in Sources */,
 				40EFEF892B4E9E2700802B40 /* EditDataViewModel.swift in Sources */,
@@ -682,6 +690,14 @@
 				minimumVersion = 10.19.1;
 			};
 		};
+		40E81B992B55A1F100D8C866 /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -819,6 +835,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 40E81B5E2B550FE900D8C866 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
+		};
+		40E81B9A2B55A1F100D8C866 /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40E81B992B55A1F100D8C866 /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 

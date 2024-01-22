@@ -7,9 +7,11 @@
 
 import Foundation
 import UIKit
+import JGProgressHUD
 
 class AdminSettingsViewController:UIViewController{
     //MARK: - Properties
+    let service = Service()
     lazy var settingsTableView:UITableView = {
         let tableView = UITableView()
         
@@ -54,6 +56,22 @@ extension AdminSettingsViewController{
     private func selectOption(item:MenuOptions){
         switch item{
         case .getData:
+            
+            let hude = JGProgressHUD(style: .dark)
+            hude.interactionType = .blockAllTouches
+            hude.textLabel.text = "Yükleniyor"
+            hude.show(in: self.view)
+            
+            service.downloadData(panels: AdminViewController.panels) { eror in
+                if let eror = eror{
+                    hude.dismiss()
+                    self.hud(type: "error", subtitle: eror.localizedDescription)
+                }else{
+                    hude.dismiss()
+                    self.hud(type: "sucses", subtitle: "Başarılı Yükleme")
+                }
+            }
+            
             print("get")
         case .requests:
             let controller = UINavigationController(rootViewController: AdminRequestViewController())

@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import JGProgressHUD
 
 class AdminViewController:UIViewController{
     //MARK: - Properties
@@ -14,6 +15,7 @@ class AdminViewController:UIViewController{
     let service = Service()
     static var panels = [Panel]()
     static var panelDatas = [String:[ProcessorS]]()
+    static var requests = [Request]()
     
     
     lazy var panelsCollectionView:UICollectionView = {
@@ -29,6 +31,9 @@ class AdminViewController:UIViewController{
     
     //MARK: - LifeCycles
     override func viewDidLoad() {
+        
+        
+        
         panelsCollectionView.dataSource = self
         panelsCollectionView.delegate = self
         super.viewDidLoad()
@@ -75,7 +80,6 @@ extension AdminViewController:UICollectionViewDelegate,UICollectionViewDataSourc
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         PanelsCollectionViewCell.panel = AdminViewController.panels[indexPath.row]
-        PanelsCollectionViewCell.process = AdminViewController.panelDatas[PanelsCollectionViewCell.panel!.email]
         var cell = collectionView.dequeueReusableCell(withReuseIdentifier: PanelsCollectionViewCell.reuseableCellId, for: indexPath) as! PanelsCollectionViewCell
         cell = collectionView.dequeueReusableCell(withReuseIdentifier: PanelsCollectionViewCell.reuseableCellId, for: indexPath) as! PanelsCollectionViewCell
         cell.emailLabel.text = AdminViewController.panels[indexPath.row].email

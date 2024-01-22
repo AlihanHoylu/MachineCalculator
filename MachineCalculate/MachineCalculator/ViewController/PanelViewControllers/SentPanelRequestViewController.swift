@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import JGProgressHUD
 
 class SentPanelRequestViewController:UIViewController{
     //MARK: - Properties
@@ -66,14 +67,24 @@ extension SentPanelRequestViewController{
     }
     
     @objc private func sentButtonClicked(){
+        
+        let hude = JGProgressHUD(style: .dark)
+        hude.interactionType = .blockAllTouches
+        hude.textLabel.text = "Yükleniyor"
+        hude.show(in: self.view)
+        
         let mail = viewModel.emailTextFieldText
         clearTextFields()
         serviceActiv = true
         service.sentAdminRequest(user: ContainerViewController.activeUser!, requestMail: mail) { eror in
             if let eror = eror{
-                print(eror.localizedDescription)
-                self.serviceActiv = false
+                hude.dismiss()
+                self.hud(type: "error", subtitle: eror.localizedDescription)
                 self.statusCheck()
+            }else{
+                hude.dismiss()
+                self.dismiss(animated: true)
+                self.hud(type: "sucses", subtitle: "Başarılı İstek")
             }
         }
         self.serviceActiv = false

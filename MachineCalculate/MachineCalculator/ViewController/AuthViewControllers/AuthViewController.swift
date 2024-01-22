@@ -8,9 +8,13 @@
 import Foundation
 import UIKit
 import FirebaseAuth
+import JGProgressHUD
 
 class AuthViewController:UIViewController{
     //MARK: - Properties
+    
+    
+    
     let service = AuthService()
     let serviceData = Service()
     
@@ -23,36 +27,42 @@ class AuthViewController:UIViewController{
     lazy var passwordTextField = AuthTextFieldView(placeHolder: "Şifre")
     lazy var image = UIImageView(image: UIImage(named: "Calcule")!)
     
-    var serviceActive = false
-    
-    
     
     //MARK: - LifeCycles
     override func viewDidLoad() {
-        AuthStatusCheckView()
-        
+        //hud.show(in: self.view)
+        //signOut()
         super.viewDidLoad()
         ContainerViewController.delegate = self
         RegisterViewController.delegate = self
         style()
         layout()
         statusCheck()
+        AuthStatusCheckView()
     }
 }
 //MARK: - @OBJC
 extension AuthViewController{
     
+    
     @objc private func loginButtonClicked(){
+        let hude = JGProgressHUD(style: .dark)
+        hude.interactionType = .blockAllTouches
+        hude.textLabel.text = "Yükleniyor"
+        hude.show(in: self.view)
+        
         let userSign = UserSign(email: viewModel.email, password: viewModel.password)
-        serviceActive = true
         clearTextFields()
         service.signUser(user: userSign) { result, eror in
-            if eror != nil{
+            if let eror = eror{
                 print("eror")
-                self.serviceActive = false
+                self.hud(type: "error", subtitle: eror.localizedDescription)
+                hude.dismiss()
+
             }else if result != nil {
+                self.hud(type: "succes", subtitle: "Giriş Başarılı")
                 self.AuthStatusCheckView()
-                self.serviceActive = false
+                hude.dismiss()
             }
             self.statusCheck()
         }
@@ -77,6 +87,14 @@ extension AuthViewController{
 //MARK: - Helpers
 extension AuthViewController{
     
+    private func signOut(){
+        do{
+            try Auth.auth().signOut()
+        }catch{
+            
+        }
+    }
+    
     private func clearTextFields(){
         emailTextField.text = ""
         passwordTextField.text = ""
@@ -84,23 +102,22 @@ extension AuthViewController{
     }
     
     private func statusCheck(){
-        if viewModel.email == "" || viewModel.password == "" || serviceActive == true{
+        if viewModel.email == "" || viewModel.password == "" {
             loginButton.isEnabled = false
             loginButton.backgroundColor = UIColor(named: "buttonEnabled")
         }else{
             loginButton.isEnabled = true
             loginButton.backgroundColor = .none
         }
-        if serviceActive == true{
-            emailTextField.isEnabled = false
-            passwordTextField.isEnabled = false
-        }else{
-            emailTextField.isEnabled = true
-            passwordTextField.isEnabled = true
-        }
     }
     
     private func AuthStatusCheckView() {
+        
+        let hude = JGProgressHUD(style: .dark)
+        hude.interactionType = .blockAllTouches
+        hude.textLabel.text = "Yükleniyor"
+        hude.show(in: self.view)
+        
         if Auth.auth().currentUser?.uid != nil {
             service.getActiveUser { snapshot, eror in
                 if eror != nil {
@@ -109,18 +126,27 @@ extension AuthViewController{
                     if let activeUser = ContainerViewController.activeUser{
                         if activeUser.rol == "admin"{
                             self.serviceData.getAdminRequest(userEmail: activeUser.email) { eror, snapshot in
-                                if eror != nil{
+                                if let eror = eror{
                                     print("istek getirmede hata")
+                                    hude.dismiss()
+                                    self.hud(type: "error", subtitle: eror.localizedDescription)
                                 }else{
                                     self.serviceData.getPanels(user: ContainerViewController.activeUser!) { eror in
-                                        if eror != nil{
+                                        if let eror = eror{
                                             print("panel getirmede hata")
+                                            hude.dismiss()
+                                            self.hud(type: "error", subtitle: eror.localizedDescription)
                                         }else{
                                             self.serviceData.downloadData(panels: AdminViewController.panels) { eror in
-                                                if eror != nil{
+                                                if let eror = eror{
                                                     print("data indirmede hata")
+                                                    hude.dismiss()
+                                                    self.hud(type: "error", subtitle: eror.localizedDescription)
                                                 }else{
                                                     DispatchQueue.main.async {
+                                                        hude.dismiss()
+                                                        self.hud(type: "sucses", subtitle: "Başarılı Yükleme")
+
                                                         let controller = UINavigationController(rootViewController: ContainerViewController())
                                                         controller.modalPresentationStyle = .fullScreen
                                                         controller.isNavigationBarHidden = true
@@ -134,15 +160,22 @@ extension AuthViewController{
                             }
                         }else if activeUser.rol == "panel"{
                             self.service.getActiveUser { snapshot, eror in
-                                if eror != nil{
+                                if let eror = eror{
                                     print("eror")
+                                    hude.dismiss()
+                                    self.hud(type: "error", subtitle: eror.localizedDescription)
                                 }else if snapshot != nil{
                                     if let activeUser = ContainerViewController.activeUser{
                                         if activeUser.rol == "panel"{
                                             self.serviceData.getAdmin(user: ContainerViewController.activeUser!) { eror in
-                                                if eror != nil{
+                                                if let eror = eror{
                                                     print("eror")
+                                                    hude.dismiss()
+                                                    self.hud(type: "error", subtitle: eror.localizedDescription)
                                                 }else{
+                                                    hude.dismiss()
+                                                    self.hud(type: "sucses", subtitle: "Giriş Başarılı")
+
                                                     DispatchQueue.main.async {
                                                         let controller = UINavigationController(rootViewController: ContainerViewController())
                                                         controller.modalPresentationStyle = .fullScreen
@@ -162,6 +195,7 @@ extension AuthViewController{
         }
         
         if Auth.auth().currentUser?.uid == nil {
+            hude.dismiss()
             dismiss(animated: true)
         }
     }
@@ -182,6 +216,7 @@ extension AuthViewController{
         registerButton.addTarget(self, action: #selector(registerButtonClicked), for: .touchUpInside)
         emailTextField.addTarget(self, action: #selector(updateViewModel), for: .editingChanged)
         passwordTextField.addTarget(self, action: #selector(updateViewModel), for: .editingChanged)
+        passwordTextField.isSecureTextEntry = true
         
     }
     private func layout(){
