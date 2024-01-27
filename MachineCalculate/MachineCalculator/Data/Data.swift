@@ -74,31 +74,6 @@ class DataUse{
             print("eror")
         }
         
-        
-        
-//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-//        let context = appDelegate.persistentContainer.viewContext
-//        let fetchr = NSFetchRequest<NSFetchRequestResult>(entityName: "Bank")
-//        fetchr.returnsObjectsAsFaults = false
-//        
-//        do{
-//            let fet = try context.fetch(fetchr)
-//            for a in fet as! [NSManagedObject] {
-//                if a.value(forKey: "id")! as! UUID == process.id!{
-//                    do{
-//                        print("delte")
-//                        context.delete(a)
-//                        try context.save()
-//                    }catch{
-//                        print("eror")
-//                    }
-//                }else{
-//                    print("yok")
-//                }
-//              }
-//        }catch{
-//            print("eror")
-//        }
     }
     
     func updateData(process:myProcessor, newGram:Float){

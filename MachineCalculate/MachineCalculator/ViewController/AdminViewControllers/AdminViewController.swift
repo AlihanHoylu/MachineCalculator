@@ -24,6 +24,12 @@ class AdminViewController:UIViewController{
         layout.itemSize = CGSize(width: Int(view.frame.width)/2-7, height: Int(view.frame.height)/3)
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.backgroundColor = .none
+        panels.forEach(<#T##body: (Panel) throws -> Void##(Panel) throws -> Void#>)
+        
+        
+        var dataDesc = true ? "equal to 7" : "not equal to 7"
+        
+        
         return collectionView
     }()
     

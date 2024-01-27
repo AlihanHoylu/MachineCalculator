@@ -22,6 +22,7 @@ class PanelSettingsViewController:UIViewController{
         case request = "Panel İsteği Gönder"
         case showAdmin = "Yöneticini Görüntüle"
         case getData = "Verileri Yükle"
+        case downloadData = "Verileri indir"
         case signOut = "Geri Dön"
         
         
@@ -35,6 +36,8 @@ class PanelSettingsViewController:UIViewController{
                 return "arrowshape.backward"
             case .showAdmin:
                 return "person.bust"
+            case .downloadData:
+                return "square.and.arrow.down"
             }
         }
     }
@@ -84,7 +87,12 @@ extension PanelSettingsViewController{
         case .signOut:
             dismiss(animated: true)
         case .showAdmin:
-            print(PanelViewController.admin?.email)
+            let showAdminVC = UINavigationController(rootViewController: ShowAdminViewController())
+            showAdminVC.navigationController?.navigationBar.backgroundColor = .white
+            showAdminVC.sheetPresentationController?.detents = [.medium()]
+            present(showAdminVC, animated: true)
+        case .downloadData:
+            print("down")
         }
     }
     

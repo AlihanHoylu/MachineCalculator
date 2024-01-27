@@ -9,6 +9,6 @@ import Foundation
 
 
 struct Panel{
-    var id:String
-    var email:String
+    var id:String?
+    var email:String?
 }

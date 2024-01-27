@@ -34,6 +34,38 @@
             endingLineNumber = "92"
             landmarkName = "getAdminRequest(userEmail:completion:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A0982CEF-FA4D-44AC-8CC6-FBB69DEDF593 - 53b5504f55c4b79"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MachineCalculator.Service.getAdminRequest(userEmail: Swift.String, completion: (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/Service/Service.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "172">
+               </Location>
+               <Location
+                  uuid = "A0982CEF-FA4D-44AC-8CC6-FBB69DEDF593 - fa7ac57d80913dbc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MachineCalculator.Service.getAdminRequest(userEmail: Swift.String, completion: (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MachineCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alihanhoylu/Desktop/github%20resporities/MachineCalculator/MachineCalculate/MachineCalculator/Service/Service.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "180">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -146,6 +178,22 @@
             endingLineNumber = "17"
             landmarkName = "sentAdminRequest(user:requestMail:completion:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8E111565-E744-48CC-884E-6364325E6F5E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MachineCalculator/ViewController/AdminViewControllers/AdminViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "AdminViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

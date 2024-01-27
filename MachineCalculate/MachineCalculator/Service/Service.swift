@@ -254,5 +254,9 @@ class Service{
         }
     }
     
+//    func downloadOwnData(panel: Panel,completion: @escaping (Error?) -> Void){
+//        var process = [proces]
+//    }
+    
     
 }
