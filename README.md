@@ -6,19 +6,19 @@ Introducing MachineCalculator, a cutting-edge iOS application designed with Swif
 
 ## Key Features:
 
-- Firebase Integration: Utilizing the power of Firebase, [Uygulama Adı] securely stores input and output data, ensuring a reliable and scalable solution for data management.
+- Firebase Integration: Utilizing the power of Firebase, MachineCalculator securely stores input and output data, ensuring a reliable and scalable solution for data management.
 
 - User Authentication: Users can easily register and log in through Firebase, offering a secure and hassle-free authentication process for enhanced user experience.
 
-- Admin Account Management: [Uygulama Adı] introduces advanced admin capabilities, allowing administrators to efficiently manage user accounts and oversee the entire data ecosystem.
+- Admin Account Management: MachineCalculator introduces advanced admin capabilities, allowing administrators to efficiently manage user accounts and oversee the entire data ecosystem.
 
 - Request Handling: The app facilitates seamless communication between users and administrators through Firebase, enabling users to send requests to admin accounts for various purposes.
 
-- Connection Establishment: Upon approval by administrators, [Uygulama Adı] establishes a secure connection, fostering collaboration and interaction between users and administrators.
+- Connection Establishment: Upon approval by administrators, MachineCalculator establishes a secure connection, fostering collaboration and interaction between users and administrators.
 
 ## How to Use:
 
-- Register/Login: Create an account using Firebase authentication for personalized access to [Uygulama Adı].
+- Register/Login: Create an account using Firebase authentication for personalized access to MachineCalculator.
 
 - Data Management: Input and output data are effortlessly managed through Firebase's datacore, ensuring a centralized and efficient data storage solution.
 
@@ -26,7 +26,7 @@ Introducing MachineCalculator, a cutting-edge iOS application designed with Swif
 
 - Connection Establishment: Upon admin approval, users can establish secure connections, fostering a dynamic and interactive environment within the app.
 
-Revolutionize your data management experience with [Uygulama Adı] – where Firebase meets Swift for a powerful and user-friendly application.
+Revolutionize your data management experience with MachineCalculator – where Firebase meets Swift for a powerful and user-friendly application.
 
 
 
